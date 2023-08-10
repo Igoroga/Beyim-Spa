@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Beyim-Spa/static/css/main.1d64da82.css",
+    "main.js": "/Beyim-Spa/static/js/main.6f0d617a.js",
+    "static/media/GradientMain1.png": "/Beyim-Spa/static/media/GradientMain1.d79d2c89eb146fbc4468.png",
+    "static/media/imgSiteFull копия.png": "/Beyim-Spa/static/media/imgSiteFull копия.e2e7f9ebff44eed83d20.png",
+    "static/media/imgPlatform2.png": "/Beyim-Spa/static/media/imgPlatform2.3d3688ee70c388010f82.png",
+    "static/media/variant1.png": "/Beyim-Spa/static/media/variant1.c73fc49cd34f94b5c291.png",
+    "static/media/variant2.png": "/Beyim-Spa/static/media/variant2.3c4a58c732f8be9c0ea0.png",
+    "static/media/variant3.png": "/Beyim-Spa/static/media/variant3.b4f08826248147909d4c.png",
+    "static/media/imgPlatform1.png": "/Beyim-Spa/static/media/imgPlatform1.98be2a0c360d4aedd4f5.png",
+    "index.html": "/Beyim-Spa/index.html",
+    "main.1d64da82.css.map": "/Beyim-Spa/static/css/main.1d64da82.css.map",
+    "main.6f0d617a.js.map": "/Beyim-Spa/static/js/main.6f0d617a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d64da82.css",
+    "static/js/main.6f0d617a.js"
+  ]
+}
