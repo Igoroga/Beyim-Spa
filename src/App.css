@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Стили для полосы прокрутки */
+body::-webkit-scrollbar {
+  width: 10px; /* Ширина полосы прокрутки */
+}
+
+/* Стили для бегунка полосы прокрутки */
+body::-webkit-scrollbar-thumb {
+  background-color: #55BBEB; /* Цвет бегунка */
+  border-radius: 5px; /* Скругление углов бегунка */
+}
+
+/* Стили для трека полосы прокрутки */
+body::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Цвет трека */
+}
+
+/* Хедер */
+
+.headerMain {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 1136px;
+  margin: 0 auto; 
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+}
+
+.headerNav img {
+  margin-right: 10px;
+}
+
+
+.headerNav a {
+  color: #333333;
+  text-decoration: none;
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.headerNav a:first-of-type {
+  margin-left: 56px;
+}
+
+.headerSetting {
+  display: flex;
+  align-items: center;
+}
+
+.languageButton {
+  cursor: pointer;
+  margin-right: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.languageButtonActive {
+  cursor: pointer;
+  margin-right: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #55BBEB;
+  
+}
+
+.signInButton {
+  padding: 10px 20px;
+  background-color: #55BBEB;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+.signInButton:hover {
+  background-color: #3d97c0;
+}
+
+/* Хедер  КОНЕЦ */
+
+/* BodyTop Начало */
+
+.GradientBody {
+  position: relative;
+  height: 882px; /* Высота элемента, вы можете изменить на нужную вам */
+  background-size: cover; /* Масштабирование изображения, чтобы оно покрывало весь фон */
+  background-repeat: no-repeat; /* Отключение повторения изображения по вертикали и горизонтали */
+  background-position: center center; /* Позиционирование изображения по центру */
+  margin-bottom: 750px;
+}
+
+.textBodyTop {
+  width: 814px;
+  margin: 0 auto; 
+  text-align: center; 
+  padding-top: 184px;
+  
+}
+.wordColumns {
+  display: flex;
+  flex-direction: column; /* Расположение слов в колонке */
+}
+
+.word {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 15px 0; 
+}
+
+.textBodyTop p {
+  width: 600px;
+  font-family: Inter;
+  font-size: 24px;
+  margin: 15px auto;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center; 
+}
+
+.textBodyTop p:last-of-type {
+  width: 600px;
+  font-family: Inter;
+  font-size: 20px;
+ }
+
+ .iconContent {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 898px;
+  padding-top: 128px; 
+  margin: 0 auto; 
+}
+
+.iconItem {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  
+  padding: 0px;
+}
+
+.iconItem img {
+  display: flex;
+  width: 63px; 
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
+.iconItem p {
+   width: 190px;
+   margin-left: 16px;
+   margin-right: 72px;
+   font-size: 18px;
+  }
+
+  .iconItem p:nth-child(2) {
+    width: 100px;
+    margin-left: 16px;
+    margin-right: 72px;
+    font-size: 18px;
+}
+
+.webSiteImage {
+  position: absolute;
+  max-width: 1136px;
+  margin: 30px auto;
+  left: 50%; /* Размещение по горизонтали в центре */
+  transform: translateX(-50%); /* Сдвиг влево на половину ширины изображения */
+  width: 100%;
+  }
+
+@media (max-width: 1078px) {
+  .headerNav a {
+    display: none;
+  }
+  
+  .languageButtonActive {
+    display: none;
+  }
+  .languageButton {
+    display: none;
+  }
+
+  .GradientBody {
+    width: 100%;
+    margin-bottom: 550px;
+  }
+  
+
+.textBodyTop {
+  width: 100%; 
+  padding: 40px 20px; 
+}
+
+.word {
+  font-size: 28px; /* Уменьшите размер шрифта для лучшей читаемости на мобильных устройствах */
+  line-height: 36px; /* Измените межстрочное расстояние для лучшей читаемости */
+  margin: 5px 0; /* Уменьшите вертикальные отступы между словами */
+}
+
+.textBodyTop p {
+  width: 100%; /* Измените ширину на 100% */
+  font-size: 18px; /* Уменьшите размер шрифта для абзацев */
+  line-height: 24px; /* Измените межстрочное расстояние для абзацев */
+  margin: 10px 0; /* Уменьшите вертикальные отступы для абзацев */
+}
+
+.textBodyTop p:last-of-type {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 20px;
+ }
+
+.iconContent {
+  display: block; /* Переключитесь на блочное расположение элементов */
+  max-width: 100%; /* Измените максимальную ширину */
+  padding-top: 60px; /* Уменьшите внешний отступ сверху */
+  margin-left: 30px;
+}
+
+
+
+.iconItem img {
+  width: 48px; /* Уменьшите размер изображений иконок */
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.iconItem p {
+  width: 100%; /* Измените ширину абзаца на 100% */
+  margin: 8px 0; /* Уменьшите вертикальные отступы для абзацев */
+  font-size: 14px; /* Уменьшите размер шрифта для абзацев */
+}
+}
+  
+
+@media (max-width: 670px) {
+  .GradientBody {
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .GradientBody {
+    margin-bottom: 100px;
+  }
+}
