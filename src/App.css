@@ -104,7 +104,7 @@ body::-webkit-scrollbar-track {
   background-size: cover; /* Масштабирование изображения, чтобы оно покрывало весь фон */
   background-repeat: no-repeat; /* Отключение повторения изображения по вертикали и горизонтали */
   background-position: center center; /* Позиционирование изображения по центру */
-  margin-bottom: 750px;
+  margin-bottom: 850px;
 }
 
 .textBodyTop {
@@ -183,12 +183,72 @@ body::-webkit-scrollbar-track {
 
 .webSiteImage {
   position: absolute;
-  max-width: 1136px;
+  max-width: 1249px;
   margin: 30px auto;
   left: 50%; /* Размещение по горизонтали в центре */
   transform: translateX(-50%); /* Сдвиг влево на половину ширины изображения */
   width: 100%;
   }
+
+
+/* BodyTop КОНЕЦ */
+
+/* BodyMiddle НАЧАЛО */
+
+.bodyMiddleMain {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.contentColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-right: 70px;
+  width: 540px; 
+}
+
+.contentColumn1{
+font-size: 40px;
+font-weight: 700;
+}
+
+.contentColumn2{
+  font-size: 24px;
+  }
+
+  .imgPlatform1{
+    margin-left: 10px;
+    margin-top: 62px;
+  }
+
+.imageRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 40px; 
+}
+
+.aboutPlatform{
+  margin-top: 58px;
+  max-width: 163px;
+  height: 46px;
+}
+
+
+
+.imageColumn img {
+  max-width: 100%; /* Ширина картинки */
+}
+
+/* BodyMiddle КОНЕЦ */
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
 
 @media (max-width: 1078px) {
   .headerNav a {
@@ -252,6 +312,10 @@ body::-webkit-scrollbar-track {
   margin: 8px 0; /* Уменьшите вертикальные отступы для абзацев */
   font-size: 14px; /* Уменьшите размер шрифта для абзацев */
 }
+.imageColumn img {
+  display: none;
+}
+
 }
   
 
