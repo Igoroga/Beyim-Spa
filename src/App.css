@@ -100,10 +100,10 @@ body::-webkit-scrollbar-track {
 
 .GradientBody {
   position: relative;
-  height: 882px; /* Высота элемента, вы можете изменить на нужную вам */
-  background-size: cover; /* Масштабирование изображения, чтобы оно покрывало весь фон */
-  background-repeat: no-repeat; /* Отключение повторения изображения по вертикали и горизонтали */
-  background-position: center center; /* Позиционирование изображения по центру */
+  height: 882px; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
   margin-bottom: 850px;
 }
 
@@ -116,7 +116,7 @@ body::-webkit-scrollbar-track {
 }
 .wordColumns {
   display: flex;
-  flex-direction: column; /* Расположение слов в колонке */
+  flex-direction: column; 
 }
 
 .word {
@@ -155,7 +155,7 @@ body::-webkit-scrollbar-track {
 
 .iconItem {
   display: flex;
-  align-items: center; /* Выравнивание по центру по вертикали */
+  align-items: center; 
   
   padding: 0px;
 }
@@ -214,6 +214,7 @@ body::-webkit-scrollbar-track {
 }
 
 .contentColumn1{
+  
 font-size: 40px;
 font-weight: 700;
 }
@@ -248,7 +249,123 @@ font-weight: 700;
 
 /* BodyMiddle КОНЕЦ */
 
+/* Слайдер НАЧАЛО */
+
+.BodySlideMain {
+ 
+  background-color: #364954;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+.contentWrapper {
+  max-width: 1136px;
+  display: flex;
+  align-items: center;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.htextSlider {
+  color: #f0f0f0;
+  margin-bottom: 50px;
+  font-size: 43px;
+}
+
+.textSlider{
+  
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  font-size: 24px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.phaseSlider {
+  width: 20px;
+  height: 25px;
+  background-color: #ccc;
+  position: relative;
+  animation: slideAnimation 15s infinite;
+  top: -70; /* Начальное положение вверху */
+}
+
+@keyframes slideAnimation {
+  0% {
+    top: -70px;
+  }
+  28% {
+    top: -70px;
+  }
+  33% {
+    top: 7px;
+  }66% {
+    top: 7px;
+  }
+  70% {
+    top: 55px;
+  }
+  97% {
+    top: 55px;
+  }
+  100% {
+    top: -103px;
+  }
+}
+
+.nameSlider {
+  margin-left: 10px;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.imageOverlay {
+  position: relative;
+  margin-left: -50px;
+  animation: fadeInOut 5s infinite; 
+  
+}
+
+.imageOverlay.active {
+  opacity: 1;
+  animation: none; 
+}
+/* Слайдер КОНЕЦ */
+
+
 /* МОБИЛЬНАЯ ВЕРСИЯ */
+
 
 @media (max-width: 1078px) {
   .headerNav a {
@@ -273,17 +390,45 @@ font-weight: 700;
   padding: 40px 20px; 
 }
 
+.contentColumn1{
+  max-width: 200px; 
+font-size: 40px;
+font-weight: 700;
+}
+
+.htextSlider{
+  display: none;
+}
+
+.phaseSlider{
+  display: none;
+}
+
+.textSlider{
+  display: none;
+}
+
+.contentColumn2{
+  font-size: 24px;
+  max-width: 350px; 
+  margin: 0 auto;
+  }
+
+  .aboutPlatform{
+    display: none;
+  }
+
 .word {
-  font-size: 28px; /* Уменьшите размер шрифта для лучшей читаемости на мобильных устройствах */
-  line-height: 36px; /* Измените межстрочное расстояние для лучшей читаемости */
-  margin: 5px 0; /* Уменьшите вертикальные отступы между словами */
+  font-size: 28px; 
+  line-height: 36px; 
+  margin: 5px 0; 
 }
 
 .textBodyTop p {
-  width: 100%; /* Измените ширину на 100% */
-  font-size: 18px; /* Уменьшите размер шрифта для абзацев */
-  line-height: 24px; /* Измените межстрочное расстояние для абзацев */
-  margin: 10px 0; /* Уменьшите вертикальные отступы для абзацев */
+  width: 100%; 
+  font-size: 18px; 
+  line-height: 24px; 
+  margin: 10px 0; 
 }
 
 .textBodyTop p:last-of-type {
@@ -293,24 +438,24 @@ font-weight: 700;
  }
 
 .iconContent {
-  display: block; /* Переключитесь на блочное расположение элементов */
-  max-width: 100%; /* Измените максимальную ширину */
-  padding-top: 60px; /* Уменьшите внешний отступ сверху */
+  display: block; 
+  max-width: 100%; 
+  padding-top: 60px; 
   margin-left: 30px;
 }
 
 
 
 .iconItem img {
-  width: 48px; /* Уменьшите размер изображений иконок */
+  width: 48px; 
   height: auto;
   margin-bottom: 8px;
 }
 
 .iconItem p {
-  width: 100%; /* Измените ширину абзаца на 100% */
-  margin: 8px 0; /* Уменьшите вертикальные отступы для абзацев */
-  font-size: 14px; /* Уменьшите размер шрифта для абзацев */
+  width: 100%; 
+  margin: 8px 0; 
+  font-size: 14px; 
 }
 .imageColumn img {
   display: none;
